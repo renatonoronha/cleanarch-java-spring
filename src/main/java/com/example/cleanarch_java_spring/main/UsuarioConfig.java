@@ -9,6 +9,12 @@ import com.example.cleanarch_java_spring.infrastructure.persistence.UsuarioRepos
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Contém todos os Beans que devem ser injetados; Realiza a injeção das dependências de cada componente/classe
+ * Cria todas as dependências e injeta elas
+ * Se for necessário trocar de framework ou controlar a injeção de outra forma, como essa classe está em uma
+ *      camada externa, podemos fazer essa implementação aqui e as regras de negócio não são afetadas
+ */
 @Configuration
 public class UsuarioConfig {
     @Bean
